@@ -1,57 +1,90 @@
 /* main.css for tribute */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
-  margin: 0 auto;
+  margin-bottom: 60px;
   font-family: 'Lora', serif;
   font-size: 100%;
-  line-height: 1.58;
+  font-size: 16px;
+  line-height: 1.64;
   letter-spacing: -.003em;
-  color: #2c3e50;
-  /* https://uigradients.com/#GradeGrey */
+  color: #222;
+  opacity: 0.9;
+}
+
+.container {
+  max-width: 740px;
+}
+
+#main {
+  margin-top: 16px;
+  margin-top: 1em;
+  padding-bottom: 16px;
+  padding-bottom: 1em;
 }
 
 a {
   display: inline-block;
-  color: #2c3e50;
-  text-decoration: underline;
+  color: #222;
+  text-decoration: none;
   transition: 0.3s;
 }
 
 a:hover {
   text-decoration: none;
+  color: #222;
 }
 
 /* title */
 .title {
   display: block;
-  margin: 24px;
 }
 
 h1 {
   display: block;
-  padding: 16px;
-  font-size: 4em;
-  text-align: center;
+  margin-bottom: 0;
+  padding-top: 16px;
+  padding-top: 1em;
+  font-size: 34px;
+  font-size: 2.125em;
+  font-weight: 600;
 }
 
 /* image */
+#img-div {
+  margin-top: 44px;
+  margin-top: 2.750em;
+}
+
 img {
   display: block;
-  margin: 0 auto;
   max-width: 100%;
-  width: 80%;
   height: auto;
 }
 
 #img-caption {
   margin-top: 16px;
-  font-style: italic;
+  margin-top: 1em;
+  font-size: 14px;
+  font-size: 0.875em;
+  opacity: 0.8;
   text-align: center;
 }
 
 /* tribute content */
 .tribute-content {
   margin-top: 40px;
-  font-size: 21px;
+  font-size: 16px;
+  font-size: 1em;
+}
+
+.tribute-content a,
+#img-caption a {
+  border-bottom: 1px solid #222;
+  opacity: 0.8;
 }
 
 /* audio content */
@@ -64,12 +97,63 @@ img {
 .share-btn ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
   list-style: none;
+  padding-left: 0;
+}
+
+.share-btn svg {
+  width: 40px;
+  height: auto;
+  padding-left: 16px;
+  padding-left: 1em;
+  opacity: 0.7;
 }
 
 /* footer */
-footer {
-  margin-top: 40px;
-  margin-bottom: 40px;
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  /* Set the fixed height of the footer here */
+  /* line-height: 60px; */
+  /* Vertically center the text there */
 }
+
+.footer .container {
+  padding: 16px 0;
+  padding: 1em 0;
+  border-top: 1px solid #222;
+  opacity: 0.9;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li:before {
+  content: '- ';
+}
+
+/* @media queries */
+/* tablets */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 42px;
+    font-size: 2.625em;
+  }
+
+  .tribute-content {
+    font-size: 24px;
+    font-size: 1.5em;
+  }
+
+  .share-btn svg {
+    width: 46px;
+  }
+}
+
+/* desktop */
+/* @media (min-width: 1024px) {} */
