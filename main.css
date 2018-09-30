@@ -133,7 +133,7 @@ footer ul {
   padding-left: 0;
 }
 
-li:before {
+footer li:before {
   content: '- ';
 }
 
