@@ -1,0 +1,75 @@
+/* main.css for tribute */
+body {
+  margin: 0 auto;
+  font-family: 'Lora', serif;
+  font-size: 100%;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+  color: #2c3e50;
+  /* https://uigradients.com/#GradeGrey */
+}
+
+a {
+  display: inline-block;
+  color: #2c3e50;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* title */
+.title {
+  display: block;
+  margin: 24px;
+}
+
+h1 {
+  display: block;
+  padding: 16px;
+  font-size: 4em;
+  text-align: center;
+}
+
+/* image */
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 80%;
+  height: auto;
+}
+
+#img-caption {
+  margin-top: 16px;
+  font-style: italic;
+  text-align: center;
+}
+
+/* tribute content */
+.tribute-content {
+  margin-top: 40px;
+  font-size: 21px;
+}
+
+/* audio content */
+.audio {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+/* share buttons */
+.share-btn ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+/* footer */
+footer {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
