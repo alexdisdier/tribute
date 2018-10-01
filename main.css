@@ -122,8 +122,10 @@ img {
 }
 
 .footer .container {
-  padding: 16px 0;
-  padding: 1em 0;
+  padding-top: 16px;
+  padding-top: 1em;
+  padding-bottom: 16px;
+  padding-bottom: 1em;
   border-top: 1px solid #222;
   opacity: 0.9;
 }
